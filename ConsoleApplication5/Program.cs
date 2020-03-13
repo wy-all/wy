@@ -32,10 +32,7 @@ namespace ConsoleApplication5
 
                 Console.WriteLine("请继续！！");
             }
-            //Chuan chuan = new Chuan();
-            //Console.WriteLine("请输入字符串");
-            //chuan.C = Console.ReadLine();
-            //chuan.Change(chuan);
+           
         }
     }
 }
