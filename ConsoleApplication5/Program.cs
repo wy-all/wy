@@ -7,12 +7,16 @@ namespace ConsoleApplication5
         static void Main(string[] args)
         {
             JSQ jsq = new JSQ();
-            float  a=0, b=0;
-            Console.WriteLine("请输入表达式，输入一个字符按一下回车！！！");
+            float  a, b;
+            a=b=0;
+            
             while (true)
             {
+                Console.WriteLine("输入第一个数");
                 jsq.Num1 = Console.ReadLine();
+                Console.WriteLine("输入一个运算符");
                 string input3 = Console.ReadLine();
+                Console.WriteLine("输入第二个数");
                 jsq.Num2 = Console.ReadLine();
                 
 
@@ -24,7 +28,7 @@ namespace ConsoleApplication5
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
+                    Console.WriteLine("错误是："+e);
                 }
                 jsq.Equals(jsq);
                 jsq.Operators();
