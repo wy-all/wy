@@ -1,7 +1,7 @@
-// gao.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// gao.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
-// monkey.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+// monkey.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 
@@ -17,7 +17,7 @@ typedef struct
 	SElemType *top;
 	int stacksize;
 }SqStack;
-//³õÊ¼»¯¿ÕÕ»
+//åˆå§‹åŒ–ç©ºæ ˆ
 void InitStack_Sq(SqStack& S)
 {
 	S.base = new SElemType[MaxSize];
@@ -26,7 +26,7 @@ void InitStack_Sq(SqStack& S)
 	S.top = S.base;
 	S.stacksize = MaxSize;
 }
-//ÅĞ¶ÏË³ĞòÕ»ÊÇ·ñÎª¿Õ
+//åˆ¤æ–­é¡ºåºæ ˆæ˜¯å¦ä¸ºç©º
 bool StackEmpty_Sq(SqStack S)
 {
 	if (S.top == S.base)
@@ -34,14 +34,14 @@ bool StackEmpty_Sq(SqStack S)
 	else
 		return false;
 }
-//ÈëÕ»
+//å…¥æ ˆ
 void Push(SqStack &S, SElemType e)
 {
 	if (S.top - S.base == MaxSize)
 		exit(0);
 	*S.top++ = e;
 }
-//³öÕ»
+//å‡ºæ ˆ
 void Pop(SqStack& S, SElemType& e)
 {
 	if (S.top == S.base)
@@ -116,7 +116,7 @@ void Conversion(int num,int a)
 int main()
 {
 	int num,a;
-	cout << "ÇëÊäÈëÒ»¸öÊ®½øÖÆÊıºÍÏëÒª×ª»¯µÄ½øÖÆÊı£º";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªåè¿›åˆ¶æ•°å’Œæƒ³è¦è½¬åŒ–çš„è¿›åˆ¶æ•°ï¼š>>>>>";
 	cin >> num>>a;
 	Conversion( num, a);
 	
